@@ -1,70 +1,191 @@
 <!DOCTYPE HTML>
 <html lang="en">
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Articulatory Encodec</title>
 
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="static/style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/ugi7azv.css">
   </head>
 
   <body>
-                <h2>Playlist</h2>
 
-                <table style="width:100%">
-                  <tr>
-                    <th>Audio</th>
-                    <th>Text</th>
-                  </tr>
-                  <tr>
-                    <td>
-                      <audio class="player" controls preload="none">
-                        <source src="p247_275.wav" type="audio/wav">
-                      </audio>                      
-                    </td>
-                    <td>What form did that take ?</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <audio class="player" controls preload="none">
-                        <source src="p277_119.wav" type="audio/wav">
-                      </audio>                      
-                    </td>
-                    <td>Naturally, it was not difficult to find support for these proposals</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <audio class="player" controls preload="none">
-                        <source src="p276_118.wav" type="audio/wav">
-                      </audio>                      
-                    </td>
-                    <td>If they liked it then I'll be happy.</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <audio class="player" controls preload="none">
-                        <source src="p254_003.wav" type="audio/wav">
-                      </audio>                      
-                    </td>
-                    <td>Six spoons of fresh snow peas, five thick slabs of blue cheese, and maybe a snack for her brother Bob.</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <audio class="player" controls preload="none">
-                        <source src="p307_396.wav" type="audio/wav">
-                      </audio>                      
-                    </td>
-                    <td>It was early morning.</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <audio class="player" controls preload="none">
-                        <source src="p301_182.wav" type="audio/wav">
-                      </audio>                      
-                    </td>
-                    <td>I see social work as a vocation, a commitment.</td>
-                  </tr>
-                </table>
+    <div id="title-sec">
+      <h1 id="title">Articulatory Encodec:</h1>
+      <h2 id="subtitle">
+        Speech Science Guided Grounded
+        Encoding and Decoding of Speech
+      </h2>
+    </div>
+    <div id="abstract-sec" class="sec">
+
+      <h2 id="abstract-title" class="sec-title">Abstract</h2>
+      <p id="abstract-p">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus 
+        nibh diam, sit amet mattis erat bibendum nec. Proin ultricies lacus 
+        ut elit vulputate, non ultricies lorem molestie. Aenean nec fermentum 
+        tortor. Aliquam vitae aliquet erat. Nunc viverra tellus at libero 
+        elementum pretium. Interdum et malesuada fames ac ante ipsum primis 
+        in faucibus. Cras eleifend, ex quis bibendum imperdiet, est est 
+        luctus augue, eu consequat nunc mauris vitae arcu. Nunc in imperdiet 
+        nunc. Curabitur ante mi, laoreet a justo in, cursus vehicula nunc. Ut 
+        ac cursus elit. Curabitur gravida magna quis ornare rutrum.
+
+        Sed sollicitudin vestibulum efficitur. Quisque gravida venenatis eros, 
+        ac suscipit diam hendrerit a. Aenean aliquet eu felis et ultrices. 
+        Vivamus pulvinar neque eros, non dictum neque lobortis nec. Aenean et 
+        mauris sodales, vestibulum ante sed, lacinia quam. Quisque eu feugiat 
+        felis. Phasellus mollis neque non eros scelerisque consectetur. 
+        Quisque pharetra eget metus ac pulvinar. Proin semper, nunc id 
+        elementum facilisis, eros urna bibendum enim, a tristique risus purus 
+        et leo. Donec viverra vehicula nunc vehicula congue. Morbi tempus 
+        consectetur lectus at tempor. Pellentesque eu vulputate nibh, et 
+        vehicula mi. 
+
+      </p>
+
+
+    </div>
+    <div id="resynth-sec" class="sec">
+      <h2 id="resynth-title" class="sec-title">Resynthesized Examples</h2>
+      <table class="tg">
+      <thead>
+        <tr>
+          <th class="tg-0lax">Ground Truth Text</th>
+          <th class="tg-0lax">Ground Truth Sample</th>
+          <th class="tg-0lax">Resynthesized Sample</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="tg-0lax">What form did that take?</td>
+          <td class="tg-0lax">
+            <audio class="player" controls preload="none">
+              <source src="static/resynth/p247_275.wav" type="audio/wav">
+            </audio>
+          </td>
+          <td class="tg-0lax">
+            <audio class="player" controls preload="none">
+              <source src="static/resynth/p247_275.wav" type="audio/wav">
+            </audio>
+          </td>
+        </tr>
+      </tbody>
+      </table>
+    </div>
+
+    <div id="vc-sec" class="sec">
+
+      <h2 id="vc-title" class="sec-title">Voice Conversion</h2>
+      <div id="vc-wrapper">
+      <table class="tg">
+      <thead>
+        <tr>
+          <th class="tg-0lax" id="vc-source-text">Source</th>
+          <th class="tg-0lax">Ours w/o P-rescale</th>
+          <th class="tg-0lax">Ours-.00.Resynth</th>
+          <th class="tg-0lax">YourTTS</th>
+          <th class="tg-0lax">QuickVC</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="tg-0lax">What form did that take?</td>
+          <td class="tg-0lax">
+            <audio class="player" controls preload="none">
+              <source src="static/vc/p247_275.wav" type="audio/wav">
+            </audio>
+          </td>
+          <td class="tg-0lax">
+            <audio class="player" controls preload="none">
+              <source src="static/vc/p247_275.wav" type="audio/wav">
+            </audio>
+          </td>
+          <td class="tg-0lax">
+            <audio class="player" controls preload="none">
+              <source src="static/vc/p247_275.wav" type="audio/wav">
+            </audio>
+          </td>
+          <td class="tg-0lax">
+            <audio class="player" controls preload="none">
+              <source src="static/vc/p247_275.wav" type="audio/wav">
+            </audio>
+          </td>
+        </tr>
+      </tbody>
+      </table>
+      </div>
+
+    </div>
+
+    <div id="interp-sec" class="sec">
+
+      <h2 id="interp-title" class="sec-title">Interpolation</h2>
+
+    </div>
+
+    <div id="multi-sec" class="sec">
+
+      <h2 id="multi-title" class="sec-title">Multilingual Examples</h2>
+      <table class="tg">
+      <thead>
+        <tr>
+          <th class="tg-0lax">Ground Truth Text</th>
+          <th class="tg-0lax">EN-R</th>
+          <th class="tg-0lax">ML-R</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="tg-0lax">What form did that take?</td>
+          <td class="tg-0lax">
+            <audio class="player" controls preload="none">
+              <source src="static/multi/p247_275.wav" type="audio/wav">
+            </audio>
+          </td>
+          <td class="tg-0lax">
+            <audio class="player" controls preload="none">
+              <source src="static/multi/p247_275.wav" type="audio/wav">
+            </audio>
+          </td>
+        </tr>
+      </tbody>
+      </table>
+
+    </div>
+
+    <div id="expr-sec" class="sec">
+
+      <h2 id="expr-title" class="sec-title">Expressive Speech</h2>
+      <table class="tg">
+      <thead>
+        <tr>
+          <th class="tg-0lax">Ground Truth Text</th>
+          <th class="tg-0lax">Ground Truth Example</th>
+          <th class="tg-0lax">Resynthesized Example</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="tg-0lax">What form did that take?</td>
+          <td class="tg-0lax">
+            <audio class="player" controls preload="none">
+              <source src="static/expr/p247_275.wav" type="audio/wav">
+            </audio>
+          </td>
+          <td class="tg-0lax">
+            <audio class="player" controls preload="none">
+              <source src="static/expr/p247_275.wav" type="audio/wav">
+            </audio>
+          </td>
+        </tr>
+      </tbody>
+      </table>
+
+    </div>
+
 </body>
 
 </html>
