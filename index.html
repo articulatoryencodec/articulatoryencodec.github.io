@@ -601,20 +601,30 @@
     </div>
 
   </div>
+
+  <br>
+  <br>
+  <br>
+  <br>
   <div id="interp-sec" class="sec">
 
-    <h2 id="interp-title" class="sec-title">Place of Articulation Interpolation Samples</h2>
+    <h2 id="interp-title" class="sec-title">Controllability Demo 1:  Interpolating Tongue Traces to Manipulate Place of Articulation Interpolation Samples ("lock-rock")</h2>
+    
     <table class="tg">
     <thead>
       <tr>
-        <th class="tg-0lax" id="interp-source-text">&alpha;: &alpha;(lock) + (1 - &alpha;)(rock)</th>
+        <th class="tg-0lax" id="interp-source-text">Mixing Ratio</th>
+        <th class="tg-0lax">Transcription</th>
         <th class="tg-0lax">Vocal Tract Visualization</th>
       </tr>
     </thead>
     <tbody>
       <tr>
         <td class="tg-0lax">
-          -0.2
+          100% lock + 0% rock
+        </td>
+        <td class="tg-0lax">
+         lock
         </td>
         <td class="tg-0lax">
           <video width="400" height="400" controls>
@@ -624,48 +634,11 @@
       </tr>
       <tr>
         <td class="tg-0lax">
-          0.0
+          80% lock + 20% rock
         </td>
         <td class="tg-0lax">
-          <video width="400" height="400" controls>
-            <source src="static/interp/lock_rock_alpha_0_0.mp4" type="video/mp4">
-          </video>
-        </td>
-      </tr>
-      <tr>
-        <td class="tg-0lax">
-          0.2
-        </td>
-        <td class="tg-0lax">
-          <video width="400" height="400" controls>
-            <source src="static/interp/lock_rock_alpha_0_2.mp4" type="video/mp4">
-          </video>
-        </td>
-      </tr>
-      <tr>
-        <td class="tg-0lax">
-          0.4
-        </td>
-        <td class="tg-0lax">
-          <video width="400" height="400" controls>
-            <source src="static/interp/lock_rock_alpha_0_4.mp4" type="video/mp4">
-          </video>
-        </td>
-      </tr>
-      <tr>
-        <td class="tg-0lax">
-          0.6
-        </td>
-        <td class="tg-0lax">
-          <video width="400" height="400" controls>
-            <source src="static/interp/lock_rock_alpha_0_6.mp4" type="video/mp4">
-          </video>
-        </td>
-      </tr>
-      <tr>
-        <td class="tg-0lax">
-          0.8
-        </td>
+          lock
+         </td>
         <td class="tg-0lax">
           <video width="400" height="400" controls>
             <source src="static/interp/lock_rock_alpha_0_8.mp4" type="video/mp4">
@@ -674,11 +647,66 @@
       </tr>
       <tr>
         <td class="tg-0lax">
-          1.0
+          60% lock + 40% rock
         </td>
         <td class="tg-0lax">
+          lock
+         </td>
+        <td class="tg-0lax">
           <video width="400" height="400" controls>
-            <source src="static/interp/lock_rock_alpha_1_0.mp4" type="video/mp4">
+            <source src="static/interp/lock_rock_alpha_0_6.mp4" type="video/mp4">
+          </video>
+        </td>
+      </tr>
+      <tr>
+        <td class="tg-0lax">
+          40% lock + 60% rock
+        </td>
+        <td class="tg-0lax">
+          lock
+         </td>
+        <td class="tg-0lax">
+          <video width="400" height="400" controls>
+            <source src="static/interp/lock_rock_alpha_0_4.mp4" type="video/mp4">
+          </video>
+        </td>
+      </tr>
+      <tr>
+        <td class="tg-0lax">
+          20% lock + 80% rock
+        </td>
+        <td class="tg-0lax">
+          rock
+         </td>
+        <td class="tg-0lax">
+          <video width="400" height="400" controls>
+            <source src="static/interp/lock_rock_alpha_0_2.mp4" type="video/mp4">
+          </video>
+        </td>
+      </tr>
+      <tr>
+        <td class="tg-0lax">
+          0% lock + 100% rock
+        </td>
+        <td class="tg-0lax">
+          rock
+         </td>
+        <td class="tg-0lax">
+          <video width="400" height="400" controls>
+            <source src="static/interp/lock_rock_alpha_0_0.mp4" type="video/mp4">
+          </video>
+        </td>
+      </tr>
+      <tr>
+        <td class="tg-0lax">
+          -20% lock + 120% rock
+        </td>
+        <td class="tg-0lax">
+          rock
+         </td>
+        <td class="tg-0lax">
+          <video width="400" height="400" controls>
+            <source src="static/interp/lock_rock_alpha__0_2.mp4" type="video/mp4">
           </video>
         </td>
       </tr>
@@ -686,21 +714,28 @@
     </table>
 
   </div>
-
+  <br>
+  <br>
+  <br>
+  <br>
   <div id="audio-interp-sec" class="sec">
 
-    <h2 id="audio-interp-title" class="sec-title">Voice Onset Time Interpolation Samples ("may" to "bay" to "pay")</h2>
+    <h2 id="audio-interp-title" class="sec-title">Controllability Demo 2: Translating "Loudness" Trace to Manipulate Voice Onset Time ("may-bay-pay")</h2>
     <table class="tg">
     <thead>
       <tr>
-        <th class="tg-0lax" id="interp-source-text">loshift (ms)</th>
-        <th class="tg-0lax">Sample</th>
+        <th class="tg-0lax" id="interp-source-text">Shift in Loudness (ms)</th>
+        <th class="tg-0lax" id="interp-source-text">Transcription</th>
+        <th class="tg-0lax">Simulated Sample</th>
       </tr>
     </thead>
     <tbody>
       <tr>
         <td class="tg-0lax">
           -100
+        </td>
+        <td class="tg-0lax">
+          may
         </td>
         <td class="tg-0lax">
           <audio class="player" controls preload="none">
@@ -713,6 +748,9 @@
           -80
         </td>
         <td class="tg-0lax">
+          may
+        </td>
+        <td class="tg-0lax">
           <audio class="player" controls preload="none">
             <source src="static/interp/bay_loshift=-80ms.wav" type="audio/wav">
           </audio>
@@ -721,6 +759,9 @@
       <tr>
         <td class="tg-0lax">
           -60
+        </td>
+        <td class="tg-0lax">
+          may
         </td>
         <td class="tg-0lax">
           <audio class="player" controls preload="none">
@@ -733,6 +774,9 @@
           -40
         </td>
         <td class="tg-0lax">
+          may
+        </td>
+        <td class="tg-0lax">
           <audio class="player" controls preload="none">
             <source src="static/interp/bay_loshift=-40ms.wav" type="audio/wav">
           </audio>
@@ -743,6 +787,9 @@
           -20
         </td>
         <td class="tg-0lax">
+          may
+        </td>
+        <td class="tg-0lax">
           <audio class="player" controls preload="none">
             <source src="static/interp/bay_loshift=-20ms.wav" type="audio/wav">
           </audio>
@@ -750,7 +797,10 @@
       </tr>
       <tr>
         <td class="tg-0lax">
-          0
+          0 
+        </td>
+        <td class="tg-0lax">
+          bay
         </td>
         <td class="tg-0lax">
           <audio class="player" controls preload="none">
@@ -763,6 +813,9 @@
           20
         </td>
         <td class="tg-0lax">
+          bay
+        </td>
+        <td class="tg-0lax">
           <audio class="player" controls preload="none">
             <source src="static/interp/bay_loshift=20ms.wav" type="audio/wav">
           </audio>
@@ -771,6 +824,9 @@
       <tr>
         <td class="tg-0lax">
           40
+        </td>
+        <td class="tg-0lax">
+          bay
         </td>
         <td class="tg-0lax">
           <audio class="player" controls preload="none">
@@ -783,6 +839,9 @@
           60
         </td>
         <td class="tg-0lax">
+          pay
+        </td>
+        <td class="tg-0lax">
           <audio class="player" controls preload="none">
             <source src="static/interp/bay_loshift=60ms.wav" type="audio/wav">
           </audio>
@@ -793,6 +852,9 @@
           80
         </td>
         <td class="tg-0lax">
+          pay
+        </td>
+        <td class="tg-0lax">
           <audio class="player" controls preload="none">
             <source src="static/interp/bay_loshift=80ms.wav" type="audio/wav">
           </audio>
@@ -801,6 +863,9 @@
       <tr>
         <td class="tg-0lax">
           100
+        </td>
+        <td class="tg-0lax">
+          pay
         </td>
         <td class="tg-0lax">
           <audio class="player" controls preload="none">
